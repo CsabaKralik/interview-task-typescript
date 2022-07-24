@@ -1,0 +1,4 @@
+.pokemon-shop{
+  display: flex;
+  flex-wrap: wrap;
+}
