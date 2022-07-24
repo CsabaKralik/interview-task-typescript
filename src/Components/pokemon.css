@@ -1,0 +1,15 @@
+.pokemon-card{
+  border-radius: 4px;
+  background-color: cadetblue;
+  width: 10rem;
+  height: 7rem;
+  text-align: center;
+  padding-top: 5rem;
+  margin: 1rem;
+}
+.pokemon-name{
+  padding-bottom: 1rem;
+}
+.pokemon-price{
+  padding-bottom: 0.5rem;
+}
