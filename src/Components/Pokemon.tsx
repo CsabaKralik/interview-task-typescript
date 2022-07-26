@@ -23,18 +23,17 @@ export default function Pokemoncard({ name, weight } :pokemonInterface) {
     document.getElementById(pokemon.name)?.remove();
   };
   return (
-    <div className="pokemon-card">
-      {/* needs id */}
+    <div>
       {name && weight
         ? (
-          <div>
+          <div className="pokemon-card" id={name}>
             <div className="pokemon-name">{name}</div>
             <div className="pokemon-price">{weight}</div>
             <div className="pokemon-price">{`${weight * 100}$`}</div>
           </div>
         )
         : (
-          <div>
+          <div className="pokemon-card" id={pokemon ? pokemon.name : 'loading'}>
             <div className="pokemon-name">{pokemon ? pokemon.name : 'loading'}</div>
             <div className="pokemon-price">{pokemon ? `${pokemon.weight * 100}$` : 'loading'}</div>
             <button type="button" onClick={buy}>Buy</button>
