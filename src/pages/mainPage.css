@@ -2,3 +2,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+#warning{
+  color: red;
+  font-size: 20px;
+}
+.pocket{
+  text-align: center;
+}
+.pokemon-pocket{
+  display: flex;
+  flex-wrap: wrap;
+
+}
